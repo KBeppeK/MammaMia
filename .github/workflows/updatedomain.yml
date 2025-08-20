@@ -1,0 +1,45 @@
+name: Update Domains
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Runs daily at 2 AM UTC
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-domains:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Install dependencies
+        run: |
+          pip install requests
+          
+      - name: Run domain updater
+        run: |
+          python update_domains.py
+          
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add config.json
+          git commit -m "Auto-update domains [$(date)]"
+          git push
