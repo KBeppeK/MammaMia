@@ -1,7 +1,7 @@
 {
     "Siti": {
         "StreamingCommunity": {
-            "url": "https://streamingcommunityz.lat",
+            "url": "https://streamingcommunityz.ltd",
             "SC_ForwardProxy": "0",
             "SC_PROXY": "0",
             "VX_ForwardProxy": "0",
@@ -13,7 +13,7 @@
             "enabled": "1"
         },
         "Tantifilm": {
-            "url": "https://www.tantifilm.auction",
+            "url": "https://www.tanti-film.online",
             "TF_ForwardProxy": "0",
             "TF_PROXY": "1",
             "enabled": "1"
