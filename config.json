@@ -1,7 +1,7 @@
 {
     "Siti": {
         "StreamingCommunity": {
-            "url": "https://streamingcommunityz.buzz",
+            "url": "https://streamingcommunityz.codes",
             "SC_ForwardProxy": "0",
             "SC_PROXY": "0",
             "VX_ForwardProxy": "0",
@@ -13,7 +13,7 @@
             "enabled": "1"
         },
         "Tantifilm": {
-            "url": "https://www.it.tanti-film.uno",
+            "url": "https://www.tanti-film.stream",
             "TF_ForwardProxy": "0",
             "TF_PROXY": "1",
             "enabled": "1"
@@ -30,7 +30,7 @@
             "enabled": "1"
         },
         "CB01": {
-            "url": "https://cb01net.autos",
+            "url": "https://cb01net.baby",
             "CB_PROXY": "1",
             "CB_ForwardProxy": "0",
             "MX_ForwardProxy": "0",
