@@ -48,7 +48,7 @@
             "enabled": "1"
         },
         "Guardaserie": {
-            "url": "https://guardaserietv.beer",
+            "url": "https://guardaserietv.bond",
             "enabled": "1",
             "GS_ForwardProxy": "0",
             "GS_PROXY": "1"
@@ -76,7 +76,7 @@
             "enabled": "1"
         },
         "DaddyLiveHD": {
-            "url": "https://dlhd.link",
+            "url": "https://dlstreams.top",
             "enabled": "1"
         }
     },
