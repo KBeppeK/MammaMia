@@ -13,7 +13,7 @@
             "enabled": "1"
         },
         "Tantifilm": {
-            "url": "https://www.tanti-film.cyou",
+            "url": "https://www.tanti-film.cfd",
             "TF_ForwardProxy": "0",
             "TF_PROXY": "1",
             "enabled": "1"
@@ -38,7 +38,7 @@
             "enabled": "1"
         },
         "DDLStream": {
-            "url": "https://ddlstreamitaly.com",
+            "url": "https://ddlstreamitaly.co",
             "cookies": {
                 "ips4_device_key": "4d593f81e70b49c0dbe21631c43d7c89",
                 "ips4_IPSSessionFront": "6b5fc4a527677121f0b9830167fe1062",
